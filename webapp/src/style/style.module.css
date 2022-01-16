@@ -1,0 +1,25 @@
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.tableBorder {
+    margin: 20px 50px;
+}
+
+.userInfo {
+    margin: 0;
+    font-size: 14px;
+}
+
+.newUserButton {
+    margin: 10px 50px;
+}
+
+.userForm {
+display: grid;
+    align-items: center;
+    margin: 0 0 0 500px;
+    width: 400px;
+}
