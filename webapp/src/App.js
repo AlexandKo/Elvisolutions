@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes} from "react-router";
+import {BrowserRouter, Route} from "react-router-dom";
+import React from "react";
+import MainLoaderContainer from "./component/main/main_load_container";
+import User from "./component/User";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    return (
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <div>
+                <Routes>
+                    <Route path='/' element={<MainLoaderContainer/>}/>
+                    <Route path='/add' element={<User title={'Add new user record'} isAddUser={true}/>}/>
+                    <Route path='/edit' element={<User title={'Edit user record'} isAddUser={false}/>}/>
+                </Routes>
+            </div>
+        </BrowserRouter>
+    )
 }
-
-export default App;
