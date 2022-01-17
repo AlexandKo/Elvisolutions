@@ -16,8 +16,7 @@ const AddButton = () => {
                 variant={'contained'}
                 size={'small'}
                 onClick={() => {
-                    handleAddClick()
-                }}>
+                    handleAddClick()}}>
                 {BUTTON_TITLE_ADD_NEW_USER}
             </Button>
         </>

@@ -13,8 +13,7 @@ const Loading = ({open}) => {
             {open &&
                 <CircularProgress
                     style={progressPosition}
-                    color="inherit"
-                />
+                    color="inherit"/>
             }
         </>
     )

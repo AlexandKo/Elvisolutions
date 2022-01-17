@@ -40,8 +40,7 @@ const Search = () => {
                            startAdornment: (
                                <InputAdornment position="start">
                                    <SearchIcon style={{color: 'blue'}}/>
-                               </InputAdornment>)
-                       }}/>
+                               </InputAdornment>)}}/>
         </>
     )
 }

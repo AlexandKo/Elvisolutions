@@ -1,9 +1,7 @@
 package ae.solidbase.interview.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
 
-@Data
 public class PageModel {
     @JsonProperty(value = "sort")
     private SortModel sortModel;
@@ -17,4 +15,8 @@ public class PageModel {
     private Boolean paged;
     @JsonProperty(value = "unpaged")
     private Boolean unpaged;
+
+    public int getPageNumber() {
+        return pageNumber;
+    }
 }

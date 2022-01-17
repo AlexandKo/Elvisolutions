@@ -34,8 +34,7 @@ const EditButton = ({id}) => {
                 color="primary"
                 title={TOOL_TIP_TEXT_EDIT}
                 onClick={() => {
-                    handleEditClick()
-                }}>
+                    handleEditClick()}}>
                 <EditIcon/>
             </IconButton>
         </>

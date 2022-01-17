@@ -1,9 +1,7 @@
 package ae.solidbase.interview.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
 
-@Data
 public class SortModel {
     @JsonProperty(value="unsorted")
     private Boolean unsorted;
@@ -11,4 +9,16 @@ public class SortModel {
     private Boolean sorted;
     @JsonProperty(value="empty")
     private Boolean empty;
+
+    public void setUnsorted(Boolean unsorted) {
+        this.unsorted = unsorted;
+    }
+
+    public void setSorted(Boolean sorted) {
+        this.sorted = sorted;
+    }
+
+    public void setEmpty(Boolean empty) {
+        this.empty = empty;
+    }
 }

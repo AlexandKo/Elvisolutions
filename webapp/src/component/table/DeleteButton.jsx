@@ -23,8 +23,7 @@ const DeleteButton = ({id}) => {
                 color="primary"
                 title={TOOL_TIP_TEXT_DELETE}
                 onClick={() => {
-                    deleteButtonHandler()
-                }}>
+                    deleteButtonHandler()}}>
                 <DeleteIcon/>
             </IconButton>
             {isDeleteWindowOpen &&

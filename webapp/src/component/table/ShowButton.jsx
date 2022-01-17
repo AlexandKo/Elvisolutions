@@ -24,8 +24,7 @@ const ShowButton = ({id}) => {
                 color="primary"
                 title={TOOL_TIP_TEXT_SHOW}
                 onClick={() => {
-                    showButtonHandler()
-                }}>
+                    showButtonHandler()}}>
                 <VisibilityIcon/>
             </IconButton>
             {isShowWindowOpen &&
